@@ -45,10 +45,15 @@ public class random extends JavaPlugin implements Listener
 
 	            //colors
 	            //To be Added
-	            int r1i = r.nextInt(17) + 1;
-	            int r2i = r.nextInt(17) + 1;
-	            Color c1 = getColor(r1i);
-	            Color c2 = getColor(r2i);
+	            int r = r.nextInt(256);
+	            int b = r.nextInt(256);
+	            int g = r.nextInt(256);
+	            Color c1 = Color.fromRGB(r, g, b);
+
+	            r = r.nextInt(256);
+	            b = r.nextInt(256);
+	            g = r.nextInt(256);
+	            Color c2 = Color.fromRGB(r, g, b);
 
 
 	            //effect
